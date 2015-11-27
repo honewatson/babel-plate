@@ -1,7 +1,9 @@
 {
   "extends": "semistandard",
   "parser": "babel-eslint",
-  "plugins": [],
+  "plugins": [
+    "react"
+  ],
   "env": {
     "browser": true,
     "mocha": true,
