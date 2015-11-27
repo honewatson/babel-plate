@@ -1,6 +1,6 @@
 # What is it
 
-Lightweight JavaScript package boilerplate I use in personal projects. Includes babel6, webpack, eslint semistandard, mocha and chai. Intended to have a page ready to write ES2015 code, with tests and linting all set up. This branch includes React, ReactDOM, and CSS Module Loaders.
+Lightweight JavaScript package boilerplate I use in personal projects. Includes babel6, webpack, eslint semistandard, mocha and chai. Intended to have a page ready to write ES2015 code, with tests and linting all set up. This branch includes React, ReactDOM, CSS Module Loaders, and babel-preset-stage-2.
 
 # Install
 
