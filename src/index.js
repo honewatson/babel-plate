@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars*/
 let React = require('react');
+/* eslint-enable no-unused-vars*/
 let ReactDOM = require('react-dom');
 (() => {
   console.log('Runner runner');
