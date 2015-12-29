@@ -9,6 +9,10 @@ Clone and install
     git clone http://github.com/pl12133/babel-plate.git
     cd babel-plate
 
+Switch to `with-react` branch:
+
+    git checkout with-react
+
 # Start your project
 
 1. Remove the `.git` folder from the project directory.
