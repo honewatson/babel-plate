@@ -7,7 +7,8 @@ var host= process.env.HOST || '10.0.3.15'
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
-  historyApiFallback: true
+  historyApiFallback: true,
+  hot: true
 }).listen(port, host, function(err,result) {
   if (err) {
     console.error(err);

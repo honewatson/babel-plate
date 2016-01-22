@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars*/
-let React = require('react');
+import React from 'react';
 /* eslint-enable no-unused-vars*/
-let ReactDOM = require('react-dom');
-(() => {
-  console.log('Runner runner');
-  const root = document.getElementById('root');
+import { render } from 'react-dom';
 
-  ReactDOM.render(<h1 style={ {textAlign: 'center'} }>{'Go React!'}</h1>, root);
-})();
+import App from 'containers/App/';
+const root = document.getElementById('root');
+
+render(<App />, root);
+
+console.log('Runner runner');
