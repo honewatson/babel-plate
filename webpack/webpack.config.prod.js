@@ -1,23 +1,22 @@
 var path = require('path');
 var webpack = require('webpack');
 
-var host = process.env.HOST || 'localhost';
-var port = process.env.PORT || '8080';
-
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://'+host+':'+port,
-    'webpack/hot/only-dev-server',
     './src/index'
   ],
   output: {
       filename: 'bundle.js',
-      path: path.join(__dirname, '/dist/'),
-      publicPath: '/dist/'
+      path: path.join(__dirname, '..', '/lib/'),
+      publicPath: '/lib/'
   },
   plugins: [  
-      new webpack.HotModuleReplacementPlugin(),
-      new webpack.NoErrorsPlugin()
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          warnings: false
+      }
+    })
   ],
   resolve: {
     extensions: ['', '.jsx', '.js', '.json'],
@@ -31,8 +30,11 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
+      }, {
+        test: /\.json$/,
+        loader: 'json',
       }
+
     ]
-  },
-  devtool: 'source-map'
+  }
 };

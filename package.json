@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src test",
-    "start": "node ./server.js",
+    "build:dev": "echo \"You should be building with webpack-dev-server, use \\\"npm run start:dev\\\"\"",
+    "build:prod": "export NODE_ENV=production; webpack -p --config webpack/webpack.config.prod.js",
+    "clean:build": "rimraf ./lib/",
+    "clean:modules": "rimraf ./node_modules/",
+    "start": "npm run start:dev",
+    "start:dev": "export NODE_ENV=development; node ./serving/server.js",
+    "start:prod": "export NODE_ENV=production; node ./serving/server.js",
     "test": "mocha --compilers js:./test/compiler.js ./test/*.spec.js",
     "prepublish": "npm run lint && npm run test"
   },
@@ -32,6 +38,7 @@
     "mocha": "^2.3.4",
     "react-transform": "0.0.3",
     "react-transform-hmr": "^1.0.1",
+    "rimraf": "^2.5.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
