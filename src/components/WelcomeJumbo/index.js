@@ -2,7 +2,7 @@
 import React, { Component, PropTypes } from 'react';
 /* eslint-enable no-unused-vars*/
 
-import { Jumbotron, Button, Grid, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 import styles from './styles/';

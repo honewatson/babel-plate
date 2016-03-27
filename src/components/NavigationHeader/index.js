@@ -5,10 +5,6 @@ import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 class NavigationHeader extends Component {
-  constructor (...args) {
-    super(...args);
-  }
-
   componentDidMount () {
     document.body.style.paddingTop = '50px';
   }
@@ -19,7 +15,7 @@ class NavigationHeader extends Component {
       <Navbar inverse fixedTop={fixedTop}>
         <Navbar.Header>
           <IndexLinkContainer to={ { pathname: '/' } }>
-            <a href="#">
+            <a href='#'>
               <Navbar.Brand>
                 {brand}
               </Navbar.Brand>

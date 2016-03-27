@@ -12,7 +12,7 @@ const App = ({children, location}) => (
     <NavigationHeader brand={'Your Brand Here'} fixedTop/>
     <Panel style={ { width: '90%', margin: '0 auto' } }>
       <ReactCSSTransitionGroup
-        transitionName="routeTransition"
+        transitionName='routeTransition'
         transitionEnterTimeout={500}
         transitionLeaveTimeout={100}
       >

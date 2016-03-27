@@ -12,11 +12,11 @@ import App from 'containers/App/';
 
 const Routes = () => (
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
+    <Route path='/' component={App}>
       <IndexRoute component={HomePage} />
-      <Route path="about" component={About} />
-      <Route path="contact" component={Contact} />
-      <Route path="*" component={Page404} />
+      <Route path='about' component={About} />
+      <Route path='contact' component={Contact} />
+      <Route path='*' component={Page404} />
     </Route>
   </Router>
 );
