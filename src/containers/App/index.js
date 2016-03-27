@@ -5,12 +5,12 @@ import React, { Component } from 'react';
 import { Panel } from 'react-bootstrap';
 import NavigationHeader from 'components/NavigationHeader/';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import './styles/';
+import styles from './styles/';
 
 const App = ({children, location}) => (
   <div>
     <NavigationHeader brand={'Your Brand Here'} fixedTop/>
-    <Panel style={ { width: '90%', margin: '0 auto' } }>
+    <Panel className={styles}>
       <ReactCSSTransitionGroup
         transitionName='routeTransition'
         transitionEnterTimeout={500}

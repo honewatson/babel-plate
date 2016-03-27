@@ -1,5 +1,2 @@
-import { styles } from './styles.scss';
+export default require('./styles.scss').styles;
 
-export default {
-  styles
-};
