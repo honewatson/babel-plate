@@ -1,0 +1,19 @@
+/* Global styles */
+
+:global {
+  .routeTransition-enter {
+    opacity: 0.01;
+    transition: opacity .5s ease-in;
+  }
+
+  .routeTransition-enter.routeTransition-enter-active {
+    opacity: 1;
+  }
+
+  .routeTransition-leave {
+    display: none;
+  }
+
+  .routeTransition-leave.routeTransition-leave-active {
+  }
+}

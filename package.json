@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
     "build": "npm run build:prod",
     "build:dev": "echo \"You should be building with webpack-dev-server, use \\\"npm run start:dev\\\"\"",
     "build:prod": "export NODE_ENV=production; webpack -p --config webpack/webpack.config.prod.js",
@@ -49,10 +50,14 @@
     "css-loader": "^0.23.0",
     "css-modules-require-hook": "^2.1.0",
     "eslint-plugin-react": "^3.11.3",
+    "history": "^2.0.1",
     "node-sass": "^3.4.2",
     "react": "^0.14.3",
+    "react-addons-css-transition-group": "^0.14.7",
+    "react-bootstrap": "^0.28.4",
     "react-dom": "^0.14.3",
-    "react-tools": "^0.13.3",
+    "react-router": "^2.0.1",
+    "react-router-bootstrap": "^0.20.1",
     "sass": "^0.5.0",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0"
