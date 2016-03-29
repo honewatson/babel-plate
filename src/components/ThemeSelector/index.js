@@ -37,7 +37,6 @@ class ThemeSelector extends Component {
   }
 
   handleThemeSelection (index, e) {
-    console.log(`Theme ${index} selected`);
     this.setState({
       active: index
     });
@@ -63,12 +62,15 @@ class ThemeSelector extends Component {
   }
 
   render () {
-    const { themes } = this.state;
+    const { themes, active } = this.state;
     const { eventKey } = this.props;
     const children = themes.map(this.renderMenuItem.bind(this));
+    const title = (active)
+      ? themes[active].name
+      : 'Bootstrap Theme';
 
     return (
-      <NavDropdown eventKey={eventKey} title='Bootstrap Theme' id='basic-nav-dropdown'>
+      <NavDropdown eventKey={eventKey} title={title} id='basic-nav-dropdown'>
         {children}
       </NavDropdown>
     );
