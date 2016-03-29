@@ -4,6 +4,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './routes/';
 
+// Polyfills go here
+require('es6-promise').polyfill();
+//
+
 ReactDOM.render(
   <Routes />,
   document.getElementById('root')

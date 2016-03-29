@@ -4,6 +4,8 @@ import React, { Component, PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
+import ThemeSelector from '../../components/ThemeSelector/';
+
 class NavigationHeader extends Component {
   componentDidMount () {
     document.body.style.paddingTop = '50px';
@@ -25,6 +27,7 @@ class NavigationHeader extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
+            <ThemeSelector eventKey={1} />
             <IndexLinkContainer to={ { pathname: '/' } }>
               <NavItem eventKey={2}>{'Home'}</NavItem>
             </IndexLinkContainer>
