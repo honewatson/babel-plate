@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars*/
 import React from 'react';
 /* eslint-enable no-unused-vars*/
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, Redirect, IndexRoute, browserHistory } from 'react-router';
 
 import HomePage from 'containers/HomePage/';
 import About from 'containers/About/';
@@ -12,7 +12,8 @@ import App from 'containers/App/';
 
 const Routes = () => (
   <Router history={browserHistory}>
-    <Route path='/' component={App}>
+    <Redirect from='/' to='/babel-plate'/>
+    <Route path='/babel-plate' component={App}>
       <IndexRoute component={HomePage} />
       <Route path='about' component={About} />
       <Route path='contact' component={Contact} />
