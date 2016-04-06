@@ -11,7 +11,7 @@ const Page404 = () => (
     </PageHeader>
     <Well>
       {'The page you requested could not be found. Please return '}
-      <IndexLinkContainer to={ { pathname: '/' } }>
+      <IndexLinkContainer to={ { pathname: '/babel-plate' } }>
         <a href='#'>{'Home'}</a>
       </IndexLinkContainer>
     </Well>

@@ -10,7 +10,7 @@ const About = () => (
     <PageHeader>
       {'A project with react-bootstrap and react-router'}
     </PageHeader>
-    <LinkContainer to={ { pathname: '/contact/' } }>
+    <LinkContainer to={ { pathname: '/babel-plate/contact/' } }>
       <Button bsStyle='success'>
         {'Contact The Designer'}
       </Button>

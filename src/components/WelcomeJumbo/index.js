@@ -13,7 +13,7 @@ const WelcomeJumbo = () => (
     <p>
       {'Begin building your beautiful website today'}
     </p>
-    <LinkContainer to={ { pathname: '/about/' } }>
+    <LinkContainer to={ { pathname: '/babel-plate/about/' } }>
       <Button bsStyle='primary'>
         {'Learn More'}
       </Button>

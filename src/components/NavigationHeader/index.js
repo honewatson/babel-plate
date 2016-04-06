@@ -16,7 +16,7 @@ class NavigationHeader extends Component {
     return (
       <Navbar inverse fixedTop={fixedTop}>
         <Navbar.Header>
-          <IndexLinkContainer to={ { pathname: '/' } }>
+          <IndexLinkContainer to={ { pathname: '/babel-plate' } }>
             <a href='#'>
               <Navbar.Brand>
                 {brand}
@@ -28,13 +28,13 @@ class NavigationHeader extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <ThemeSelector eventKey={1} />
-            <IndexLinkContainer to={ { pathname: '/' } }>
+            <IndexLinkContainer to={ { pathname: '/babel-plate' } }>
               <NavItem eventKey={2}>{'Home'}</NavItem>
             </IndexLinkContainer>
-            <LinkContainer to={ { pathname: '/about' } }>
+            <LinkContainer to={ { pathname: '/babel-plate/about' } }>
               <NavItem eventKey={3}>{'About'}</NavItem>
             </LinkContainer>
-            <LinkContainer to={ { pathname: '/contact' } }>
+            <LinkContainer to={ { pathname: '/babel-plate/contact' } }>
               <NavItem eventKey={4}>{'Contact'}</NavItem>
             </LinkContainer>
           </Nav>
