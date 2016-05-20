@@ -4,11 +4,13 @@ import React, { Component, PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
-import ThemeSelector from '../../components/ThemeSelector/';
+import { ThemeSelector } from 'components/';
 
 class NavigationHeader extends Component {
   componentDidMount () {
-    document.body.style.paddingTop = '50px';
+    if (this.props.fixedTop) {
+      document.body.style.paddingTop = '50px';
+    }
   }
 
   render () {

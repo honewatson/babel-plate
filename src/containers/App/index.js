@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 /* eslint-enable no-unused-vars*/
 
 import { Panel } from 'react-bootstrap';
-import NavigationHeader from 'components/NavigationHeader/';
+import { NavigationHeader } from 'components/';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import styles from './styles/';
 

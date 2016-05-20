@@ -3,12 +3,7 @@ import React from 'react';
 /* eslint-enable no-unused-vars*/
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-import HomePage from 'containers/HomePage/';
-import About from 'containers/About/';
-import Contact from 'containers/Contact/';
-import Page404 from 'containers/Page404/';
-
-import App from 'containers/App/';
+import { App, HomePage, About, Contact, Page404 } from 'containers/';
 
 const Routes = () => (
   <Router history={browserHistory}>
