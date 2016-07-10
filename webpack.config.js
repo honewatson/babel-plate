@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 var host = process.env.HOST || 'localhost';
-var port = process.env.PORT || '8080';
+var port = process.env.PORT || '8081';
 
 module.exports = {
   entry: [
